@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_fHmaUOn9EeWCKpkafw7Z7Q" comment="connectionComment" label="connectionLabel" dataPackage="_fHmaUen9EeWCKpkafw7Z7Q"/>
+  <TalendMetadata:GenericPackage xmi:id="_fHmaUen9EeWCKpkafw7Z7Q" dataManager="_fHmaUOn9EeWCKpkafw7Z7Q">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_fHmaUun9EeWCKpkafw7Z7Q" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fHmaU-n9EeWCKpkafw7Z7Q" name="cd_labor" id="2031" label="cd_labor" length="8" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_fHmaVOn9EeWCKpkafw7Z7Q"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fHmaVen9EeWCKpkafw7Z7Q" name="nm_labor" id="2032" label="nm_labor" length="60" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_fHmaVun9EeWCKpkafw7Z7Q"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fHmaV-n9EeWCKpkafw7Z7Q" name="uf_ibge" id="2033" label="uf_ibge" length="2" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_fHmaWOn9EeWCKpkafw7Z7Q"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fHmaWen9EeWCKpkafw7Z7Q" name="mun_ibge" id="2034" label="mun_ibge" length="6" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_fHmaWun9EeWCKpkafw7Z7Q"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fHmaW-n9EeWCKpkafw7Z7Q" name="cd_local" id="2035" label="cd_local" length="8" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_fHmaXOn9EeWCKpkafw7Z7Q"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fHmaXen9EeWCKpkafw7Z7Q" name="dt_insta" id="2036" label="dt_insta" length="13" sourceType="TIMESTAMP" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_fHmaXun9EeWCKpkafw7Z7Q"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_fHmaX-n9EeWCKpkafw7Z7Q" name="status" id="2037" label="status" length="1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_fHmaYOn9EeWCKpkafw7Z7Q"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

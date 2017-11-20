@@ -1,0 +1,241 @@
+package routines;
+
+import net.disy.talend.spatial.lib.geometry.DGeometry;
+
+public class DGeometryFilter {
+
+  /**
+   * Tests whether the distance from the first geometry to the second is less than or equal to a specified value.
+   *
+   * {talendTypes} boolean | Boolean
+   *
+   * {Category} DGeometryFilter
+   *
+   * {param} DGeometry(null) geometry1: the first geometry
+   *
+   * {param} DGeometry(null) geometry2: the second geometry
+   *
+   * {param} double(1000.0) distance: the distance value to compare
+   *
+   * {example} IS_WITHIN_DISTANCE(geometry1, geometry2, distance)
+   *
+   */
+  public static boolean IS_WITHIN_DISTANCE(DGeometry geometry1, DGeometry geometry2, double distance) {
+    return geometry1 != null && geometry2 != null
+        ? geometry1.isWithinDistance(geometry2, distance)
+        : false;
+  }
+
+  /**
+   * Tests whether two geometries intersect.
+   *
+   * {talendTypes} boolean | Boolean
+   *
+   * {Category} DGeometryFilter
+   *
+   * {param} DGeometry(null) geometry1: the first geometry
+   *
+   * {param} DGeometry(null) geometry2: the second geometry
+   *
+   * {example} INTERSECTS(geometry1, geometry2)
+   *
+   */
+  public static boolean INTERSECTS(DGeometry geometry1, DGeometry geometry2) {
+    return geometry1 != null && geometry2 != null ? geometry1.intersects(geometry2) : false;
+  }
+
+  /**
+   * Tests whether the first geometry is topologically equal to the second geometry.
+   *
+   * {talendTypes} boolean | Boolean
+   *
+   * {Category} DGeometryFilter
+   *
+   * {param} DGeometry(null) geometry1: the first geometry
+   *
+   * {param} DGeometry(null) geometry2: the second geometry
+   *
+   * {example} EQUALS(geometry1, geometry2)
+   *
+   */
+  public static boolean EQUALS(DGeometry geometry1, DGeometry geometry2) {
+    return geometry1 != null ? geometry1.equals(geometry2) : (geometry2 == null);
+  }
+
+  /**
+   * Tests whether the first geometry touches the second geometry.
+   *
+   * {talendTypes} boolean | Boolean
+   *
+   * {Category} DGeometryFilter
+   *
+   * {param} DGeometry(null) geometry1: the first geometry
+   *
+   * {param} DGeometry(null) geometry2: the second geometry
+   *
+   * {example} TOUCHES(geometry1, geometry2)
+   *
+   */
+  public static boolean TOUCHES(DGeometry geometry1, DGeometry geometry2) {
+    return geometry1 != null && geometry2 != null ? geometry1.touches(geometry2) : false;
+  }
+
+  /**
+   * Tests whether the first geometry crosses the second geometry.
+   *
+   * {talendTypes} boolean | Boolean
+   *
+   * {Category} DGeometryFilter
+   *
+   * {param} DGeometry(null) geometry1: the first geometry
+   *
+   * {param} DGeometry(null) geometry2: the second geometry
+   *
+   * {example} CROSSES(geometry1, geometry2)
+   *
+   */
+  public static boolean CROSSES(DGeometry geometry1, DGeometry geometry2) {
+    return geometry1 != null && geometry2 != null ? geometry1.crosses(geometry2) : false;
+  }
+
+  /**
+   * Tests whether the first geometry contains the second geometry.
+   *
+   * {talendTypes} boolean | Boolean
+   *
+   * {Category} DGeometryFilter
+   *
+   * {param} DGeometry(null) geometry1: the first geometry
+   *
+   * {param} DGeometry(null) geometry2: the second geometry
+   *
+   * {example} CONTAINS(geometry1, geometry2)
+   *
+   */
+  public static boolean CONTAINS(DGeometry geometry1, DGeometry geometry2) {
+    return geometry1 != null && geometry2 != null ? geometry1.contains(geometry2) : false;
+  }
+
+  /**
+   * Tests whether the first geometry is within the second geometry.
+   *
+   * {talendTypes} boolean | Boolean
+   *
+   * {Category} DGeometryFilter
+   *
+   * {param} DGeometry(null) geometry1: the first geometry
+   *
+   * {param} DGeometry(null) geometry2: the second geometry
+   *
+   * {example} WITHIN(geometry1, geometry2)
+   *
+   */
+  public static boolean WITHIN(DGeometry geometry1, DGeometry geometry2) {
+    return geometry1 != null && geometry2 != null ? geometry1.within(geometry2) : false;
+  }
+
+  /**
+   * Tests whether the first geometry covers the second geometry.
+   *
+   * {talendTypes} boolean | Boolean
+   *
+   * {Category} DGeometryFilter
+   *
+   * {param} DGeometry(null) geometry1: the first geometry
+   *
+   * {param} DGeometry(null) geometry2: the second geometry
+   *
+   * {example} COVERS(geometry1, geometry2)
+   *
+   */
+  public static boolean COVERS(DGeometry geometry1, DGeometry geometry2) {
+    return geometry1 != null && geometry2 != null ? geometry1.covers(geometry2) : false;
+  }
+
+  /**
+   * Tests whether the first geometry is covered by the second geometry.
+   *
+   * {talendTypes} boolean | Boolean
+   *
+   * {Category} DGeometryFilter
+   *
+   * {param} DGeometry(null) geometry1: the first geometry
+   *
+   * {param} DGeometry(null) geometry2: the second geometry
+   *
+   * {example} COVERED_BY(geometry1, geometry2)
+   *
+   */
+  public static boolean COVERED_BY(DGeometry geometry1, DGeometry geometry2) {
+    return geometry1 != null && geometry2 != null ? geometry1.coveredBy(geometry2) : false;
+  }
+
+  /**
+   * Tests whether the first geometry is disjoint from the second geometry.
+   *
+   * {talendTypes} boolean | Boolean
+   *
+   * {Category} DGeometryFilter
+   *
+   * {param} DGeometry(null) geometry1: the first geometry
+   *
+   * {param} DGeometry(null) geometry2: the second geometry
+   *
+   * {example} DISJOINT(geometry1, geometry2)
+   *
+   */
+  public static boolean DISJOINT(DGeometry geometry1, DGeometry geometry2) {
+    return geometry1 != null && geometry2 != null ? geometry1.disjoint(geometry2) : true;
+  }
+
+  /**
+   * Tests whether the first geometry overlaps the second geometry.
+   *
+   * {talendTypes} boolean | Boolean
+   *
+   * {Category} DGeometryFilter
+   *
+   * {param} DGeometry(null) geometry1: the first geometry
+   *
+   * {param} DGeometry(null) geometry2: the second geometry
+   *
+   * {example} OVERLAPS(geometry1, geometry2)
+   *
+   */
+  public static boolean OVERLAPS(DGeometry geometry1, DGeometry geometry2) {
+    return geometry1 != null && geometry2 != null ? geometry1.overlaps(geometry2) : false;
+  }
+
+  /**
+   * Tests whether the elements in the DE-9IM intersection matrix for the two geometries match the elements in intersection pattern.
+   * The pattern is a 9-character string, with symbols drawn from the following set:
+   *  <UL>
+   *    <LI> 0 (dimension 0)
+   *    <LI> 1 (dimension 1)
+   *    <LI> 2 (dimension 2)
+   *    <LI> T ( matches 0, 1 or 2)
+   *    <LI> F ( matches FALSE)
+   *    <LI> * ( matches any value)
+   *  </UL>
+   * For more information on the DE-9IM, see the "OpenGIS Simple Features Specification".
+   *
+   * {talendTypes} boolean | Boolean
+   *
+   * {Category} DGeometryFilter
+   *
+   * {param} DGeometry(null) geometry1: the first geometry
+   *
+   * {param} DGeometry(null) geometry2: the second geometry
+   *
+   * {param} String("FFFFFFFFF") intersectionMatrix: the pattern against which to check the intersection matrix for the two geometries
+   *
+   * {example} RELATE(geometry1, geometry2, intersectionMatrix)
+   *
+   */
+  public static boolean RELATE(DGeometry geometry1, DGeometry geometry2, String intersectionMatrix) {
+    return geometry1 != null && geometry2 != null
+        ? geometry1.relate(geometry2, intersectionMatrix)
+        : false;
+  }
+
+}

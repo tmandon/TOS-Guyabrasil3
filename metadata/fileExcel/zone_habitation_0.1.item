@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_7IFjsPAKEeWtF5g6c8_SQQ" name="zone_habitation" dataPackage="_7IFjsfAKEeWtF5g6c8_SQQ _gHiaICPhEeaAbbMBgWV-VA" Server="Localhost 127.0.0.1" FilePath="E:/Stage/Data/Guyane/Cartographique/Zone_Habitation.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Feuille1" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="Feuille1:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_7IFjsfAKEeWtF5g6c8_SQQ" name="default" dataManager="_7IFjsPAKEeWtF5g6c8_SQQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_7IFjsvAKEeWtF5g6c8_SQQ" id="_mHcbcPAKEeWtF5g6c8_SQQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7IFjs_AKEeWtF5g6c8_SQQ" label="Code_site" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7IFjtPAKEeWtF5g6c8_SQQ" label="code_CS" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7IFjtfAKEeWtF5g6c8_SQQ" label="libelle" length="50" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7IFjtvAKEeWtF5g6c8_SQQ" label="zone_UTM" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7IFjt_AKEeWtF5g6c8_SQQ" label="latitude" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_7IFjuPAKEeWtF5g6c8_SQQ" label="longitude" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_gHiaICPhEeaAbbMBgWV-VA" name="default" dataManager="_7IFjsPAKEeWtF5g6c8_SQQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_gHiaISPhEeaAbbMBgWV-VA" id="_c1IOMCPhEeaAbbMBgWV-VA" label="metadata1">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gHiaIiPhEeaAbbMBgWV-VA" label="Code_site" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gHiaIyPhEeaAbbMBgWV-VA" label="code_CS" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gHiaJCPhEeaAbbMBgWV-VA" label="libelle" length="41" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gHiaJSPhEeaAbbMBgWV-VA" label="zone_UTM" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gHiaJiPhEeaAbbMBgWV-VA" label="latitude" length="6" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_gHiaJyPhEeaAbbMBgWV-VA" label="longitude" length="6" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DisyShapeFile="http://www.disy.net/talend/shapefile" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <DisyShapeFile:ShapeFileConnection xmi:id="_au0YUKdoEeeMwrObzI9oxw" name="brazil_administrative" dataPackage="_au0YUadoEeeMwrObzI9oxw" mappingTypeUsed="true" mappingTypeId="shapefile_id" ShapeFilePath="/home/mandon/Bureau/projet/data/Brazil/spatial/brazil-administrative/brazil_administrative.shp" Encoding="ISO-8859-1" SpatialReferenceSystem="GEOGCS[&quot;WGS 84&quot;,DATUM[&quot;WGS_1984&quot;,SPHEROID[&quot;WGS 84&quot;,6378137,298.257223563,AUTHORITY[&quot;EPSG&quot;,&quot;7030&quot;]],TOWGS84[0,0,0,0,0,0,0],AUTHORITY[&quot;EPSG&quot;,&quot;6326&quot;]],PRIMEM[&quot;Greenwich&quot;,0,AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]],UNIT[&quot;degree&quot;,0.01745329251994328,AUTHORITY[&quot;EPSG&quot;,&quot;9122&quot;]],AUTHORITY[&quot;EPSG&quot;,&quot;4326&quot;]]"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_au0YUadoEeeMwrObzI9oxw" name="default" dataManager="_au0YUKdoEeeMwrObzI9oxw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_au0YUqdoEeeMwrObzI9oxw" id="_PJSfoKdoEeeMwrObzI9oxw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_au0YU6doEeeMwrObzI9oxw" name="NAME" id="NAME" label="NAME" length="74" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_au0YVKdoEeeMwrObzI9oxw" name="ADMIN_LEVE" id="ADMIN_LEVE" label="ADMIN_LEVE" length="4" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_au0YVadoEeeMwrObzI9oxw" name="SHAPE" id="SHAPE" label="SHAPE" sourceType="POLYLINE" talendType="id_DGeometry"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

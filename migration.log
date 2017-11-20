@@ -1,0 +1,26 @@
+ * Task [Fix a problem of project resources linked to items] : Applied successfully
+ * Task [ChangeDBVersionValue4BonitaComponents] : Applied successfully
+ * Task [NewSalesforceMigrationTask] : Applied successfully
+ * Task [ChangeLogLevel4tRedshiftInput] : Applied successfully
+ * Task [AddContextCommentValueMigrationTask] : Nothing to do
+ * Task [ChangeDefaultValueForCassandra3Version] : Applied successfully
+ * Task [NewGenericWizardMigrationTask] : Nothing to do
+ * Task [Add XMI Id for context item] : Nothing to do
+ * Task [UpdateUrlForRedShiftMigrationTask] : Nothing to do
+ * Task [SubstituteRemovedMDMOperatorMigrationTask] : Applied successfully
+ * Task [RenameDriverJarPathForDBConnectionMigrationTask] : Nothing to do
+ * Task [AutoUpdateRelationsMigrationTask] : Applied successfully
+ ---=== End of migration ===---
+ * Task [Fix a problem of project resources linked to items] : Applied successfully
+ * Task [SetDefaultValueForNewerEmailFirstOfTDI35976] : Applied successfully
+ * Task [ChangeDefaultValueForCassandraOutputBatch] : Applied successfully
+ * Task [RemoveDuplicatedContextGroupMigrationTask] : Nothing to do
+ * Task [UpdateJobletContextInJobMigrationTask] : Nothing to do
+ * Task [ReplaceVarcharArrayWithVarcharIssueTDI35719] : Applied successfully
+ * Task [Salesforce620Migration] : Applied successfully
+ * Task [Salesforce620WizardMigration] : Nothing to do
+ * Task [ChangeHadoopConfJarNameMigrationTask] : Nothing to do
+ * Task [AdaptDeprecatedHadoopVersionsMigrationTask] : Nothing to do
+ * Task [AddDefaultVersionValueForElasticsearchLookupInput] : Applied successfully
+ * Task [AutoUpdateRelationsMigrationTask] : Applied successfully
+ ---=== End of migration ===---

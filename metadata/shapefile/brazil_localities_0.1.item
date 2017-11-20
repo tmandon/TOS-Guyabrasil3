@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DisyShapeFile="http://www.disy.net/talend/shapefile" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <DisyShapeFile:ShapeFileConnection xmi:id="_QCKWcKdqEeeMwrObzI9oxw" name="brazil_localities" dataPackage="_QCKWcadqEeeMwrObzI9oxw" mappingTypeUsed="true" mappingTypeId="shapefile_id" ShapeFilePath="/home/mandon/Bureau/projet/data/Brazil/spatial/BR_Localidades_2010_v1.shp" Encoding="ISO-8859-1" SpatialReferenceSystem="GEOGCS[&quot;GCS_SIRGAS_2000&quot;,DATUM[&quot;D_SIRGAS_2000&quot;,SPHEROID[&quot;GRS_1980&quot;,6378137,298.257222101]],PRIMEM[&quot;Greenwich&quot;,0],UNIT[&quot;Degree&quot;,0.017453292519943295]]"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_QCKWcadqEeeMwrObzI9oxw" name="default" dataManager="_QCKWcKdqEeeMwrObzI9oxw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_QCKWcqdqEeeMwrObzI9oxw" id="_GXtDUKdqEeeMwrObzI9oxw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWc6dqEeeMwrObzI9oxw" name="ID" id="ID" label="ID" length="10" sourceType="NUMBER" talendType="id_Long"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWdKdqEeeMwrObzI9oxw" name="CD_GEOCODI" id="CD_GEOCODI" label="CD_GEOCODI" length="20" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWdadqEeeMwrObzI9oxw" name="TIPO" id="TIPO" label="TIPO" length="10" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWdqdqEeeMwrObzI9oxw" name="CD_GEOCODB" id="CD_GEOCODB" label="CD_GEOCODB" length="20" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWd6dqEeeMwrObzI9oxw" name="NM_BAIRRO" id="NM_BAIRRO" label="NM_BAIRRO" length="60" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWeKdqEeeMwrObzI9oxw" name="CD_GEOCODS" id="CD_GEOCODS" label="CD_GEOCODS" length="20" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWeadqEeeMwrObzI9oxw" name="CD_GEOCODD" id="CD_GEOCODD" label="CD_GEOCODD" length="20" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWeqdqEeeMwrObzI9oxw" name="NM_DISTRIT" id="NM_DISTRIT" label="NM_DISTRIT" length="60" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWe6dqEeeMwrObzI9oxw" name="CD_GEOCODM" id="CD_GEOCODM" label="CD_GEOCODM" length="20" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWfKdqEeeMwrObzI9oxw" name="NM_MUNICIP" id="NM_MUNICIP" label="NM_MUNICIP" length="60" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWfadqEeeMwrObzI9oxw" name="NM_MICRO" id="NM_MICRO" label="NM_MICRO" length="100" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWfqdqEeeMwrObzI9oxw" name="NM_MESO" id="NM_MESO" label="NM_MESO" length="100" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWf6dqEeeMwrObzI9oxw" name="NM_UF" id="NM_UF" label="NM_UF" length="60" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWgKdqEeeMwrObzI9oxw" name="CD_NIVEL" id="CD_NIVEL" label="CD_NIVEL" length="1" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWgadqEeeMwrObzI9oxw" name="CD_CATEGOR" id="CD_CATEGOR" label="CD_CATEGOR" length="5" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWgqdqEeeMwrObzI9oxw" name="NM_CATEGOR" id="NM_CATEGOR" label="NM_CATEGOR" length="50" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWg6dqEeeMwrObzI9oxw" name="NM_LOCALID" id="NM_LOCALID" label="NM_LOCALID" length="60" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWhKdqEeeMwrObzI9oxw" name="LONG" id="LONG" label="LONG" length="24" precision="6" sourceType="FLOATINGPOINT" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWhadqEeeMwrObzI9oxw" name="LAT" id="LAT" label="LAT" length="24" precision="6" sourceType="FLOATINGPOINT" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWhqdqEeeMwrObzI9oxw" name="ALT" id="ALT" label="ALT" length="24" precision="5" sourceType="FLOATINGPOINT" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWh6dqEeeMwrObzI9oxw" name="GMRotation" id="GMROTATION" label="GMROTATION" length="24" precision="5" sourceType="FLOATINGPOINT" talendType="id_Double"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_QCKWiKdqEeeMwrObzI9oxw" name="SHAPE" id="SHAPE" label="SHAPE" sourceType="POINT" talendType="id_DGeometry"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

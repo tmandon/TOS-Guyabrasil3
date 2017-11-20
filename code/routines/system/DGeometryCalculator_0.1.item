@@ -1,0 +1,126 @@
+package routines;
+
+import com.vividsolutions.jts.geom.Coordinate;
+
+import net.disy.talend.spatial.lib.executor.geometry.calculator.AreaCalculator;
+import net.disy.talend.spatial.lib.executor.geometry.calculator.LengthCalculator;
+import net.disy.talend.spatial.lib.geometry.IGeometry;
+
+public class DGeometryCalculator {
+  
+  private static AreaCalculator defaultAreaCalucator = new AreaCalculator(false);
+  private static AreaCalculator geographicAreaCalucator = new AreaCalculator(true);
+
+  private static LengthCalculator defaultLengthCalucator = new LengthCalculator(false);
+  private static LengthCalculator geographicLengthCalucator = new LengthCalculator(true);
+
+  public enum OrdinateType {
+    X(0), Y(1), Z(2);
+
+    private int ordinateIndex;
+
+    private OrdinateType(int ordinateIndex) {
+      this.ordinateIndex = ordinateIndex;
+    }
+
+    public int getOrdinateIndex() {
+      return ordinateIndex;
+    }
+  }
+
+  /**
+   * LENGTH() Returns length of the geometry.
+   *
+   * {talendTypes} double | Double
+   *
+   * {Category} DGeometryCalculator
+   *
+   * {param} DGeometry(null) geometry: Geometry
+   *
+   * {example} LENGTH(geom)
+   *
+   */
+  public static Double LENGTH(IGeometry geometry) {
+    return defaultLengthCalucator.calculate(geometry);
+  }
+
+  /**
+   * LENGTH_ON_ELLIPSOID() Returns length of the geometry calculated on ellipsoid.
+   *
+   * {talendTypes} double | Double
+   *
+   * {Category} DGeometryCalculator
+   *
+   * {param} DGeometry(null) geometry: Geometry
+   *
+   * {example} LENGTH_ON_ELLIPSOID(geom)
+   *
+   */
+  public static Double LENGTH_ON_ELLIPSOID(IGeometry geometry) {
+    return geographicLengthCalucator.calculate(geometry);
+  }
+
+  /**
+   * AREA() Returns area of the geometry.
+   *
+   * {talendTypes} double | Double
+   *
+   * {Category} DGeometryCalculator
+   *
+   * {param} DGeometry(null) geometry: Geometry
+   *
+   * {example} AREA(geom)
+   *
+   */
+  public static Double AREA(IGeometry geometry) {
+    return defaultAreaCalucator.calculate(geometry);
+  }
+
+  /**
+   * AREA_ON_ELLIPSOID() Returns area of the geometry calculated on ellipsoid.
+   *
+   * {talendTypes} double | Double
+   *
+   * {Category} DGeometryCalculator
+   *
+   * {param} DGeometry(null) geometry: Geometry
+   *
+   * {example} AREA_ON_ELLIPSOID(geom)
+   *
+   */
+  public static Double AREA_ON_ELLIPSOID(IGeometry geometry) {
+    return geographicAreaCalucator.calculate(geometry);
+  }
+
+  /**
+   * COORDINATE() Returns x, y or z of the n-th point of the geometry.
+   *
+   * {talendTypes} double | Double
+   *
+   * {Category} DGeometryCalculator
+   *
+   * {param} DGeometry(null) geometry: Geometry
+   *
+   * {param} int(-1) index: index of the point, which coordinate will be returned. Pass -1 to return the last coordinate, -2 - the second last, ....
+   *
+   * {param} DGeometryCalculator.OrdinateType(DGeometryCalculator.OrdinateType.X) ordinateType: x, y, or z - DGeometryCalculator.OrdinateType.X, DGeometryCalculator.OrdinateType.Y or DGeometryCalculator.OrdinateType.Z
+   *
+   * {example} COORDINATE(null, -1, DGeometryCalculator.OrdinateType.X)
+   *
+   */
+  public static Double COORDINATE(IGeometry geometry, int index, OrdinateType ordinateType) {
+    if (geometry != null) {
+      Coordinate[] coordinates = geometry.getCoordinates();
+
+      if (index < 0) {
+        index = coordinates.length + index;
+      }
+
+      if (index > 0 || index < coordinates.length) {
+        Coordinate coordinate = coordinates[index];
+        return coordinate.getOrdinate(ordinateType.getOrdinateIndex());
+      }
+    }
+    return null;
+  }
+}

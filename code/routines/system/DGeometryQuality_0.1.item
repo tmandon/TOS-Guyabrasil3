@@ -1,0 +1,23 @@
+package routines;
+
+import net.disy.talend.spatial.lib.geometry.DGeometry;
+
+public class DGeometryQuality {
+
+  /**
+   * Validates the geometry.
+   *
+   * {talendTypes} boolean | Boolean
+   *
+   * {Category} DGeometryQuality
+   *
+   * {param} DGeometry(null) geometry: the geometry to validate
+   *
+   * {example} IS_VALID(geometry)
+   *
+   */
+  public static boolean IS_VALID(DGeometry geometry) {
+    return geometry != null ? geometry.isValid() : true;
+  }
+
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_qoZ6YCPtEeaAbbMBgWV-VA" name="cas_observation" dataPackage="_qoZ6YSPtEeaAbbMBgWV-VA" Server="Localhost 127.0.0.1" FilePath="E:/Stage/Data/Guyane/Epidémiologiques/Cas_Observation.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="Feuil1" firstColumn="1" thousandSeparator="','" decimalSeparator="'.'" selectAllSheets="true" sheetList="Feuil1:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+    <sheetColumns>I</sheetColumns>
+    <sheetColumns>J</sheetColumns>
+    <sheetColumns>K</sheetColumns>
+    <sheetColumns>L</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_qoZ6YSPtEeaAbbMBgWV-VA" name="default" dataManager="_qoZ6YCPtEeaAbbMBgWV-VA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_qoZ6YiPtEeaAbbMBgWV-VA" id="_S0PhoCPtEeaAbbMBgWV-VA" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qoZ6YyPtEeaAbbMBgWV-VA" label="codecs" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qoZ6ZCPtEeaAbbMBgWV-VA" label="dateentree" length="12" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qoZ6ZSPtEeaAbbMBgWV-VA" label="modeentree" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qoZ6ZiPtEeaAbbMBgWV-VA" label="numeropatient" length="10" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qoZ6ZyPtEeaAbbMBgWV-VA" label="agepatient" length="10" precision="2" talendType="id_BigDecimal" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qoZ6aCPtEeaAbbMBgWV-VA" label="sexepatient" length="1" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qoZ6aSPtEeaAbbMBgWV-VA" label="zonerecrutement" length="3" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qoZ6aiPtEeaAbbMBgWV-VA" label="diagnosticprincipal" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qoZ6ayPtEeaAbbMBgWV-VA" label="diagnosticassocie" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qoZ6bCPtEeaAbbMBgWV-VA" label="datesortie" length="12" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qoZ6bSPtEeaAbbMBgWV-VA" label="modesortie" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_qoZ6biPtEeaAbbMBgWV-VA" label="dureesejourobservation" length="5" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

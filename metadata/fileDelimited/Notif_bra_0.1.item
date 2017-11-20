@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:DelimitedFileConnection xmi:id="_5Rh48JoQEeeiWLumXzh2Bg" name="Notif_bra" dataPackage="_5Rh48ZoQEeeiWLumXzh2Bg" Server="Localhost 127.0.0.1" FilePath="/home/mandon/Bureau/projet/data/Brazil/epidemiological/data/NOTIAP16.DBF" Encoding="US-ASCII" FieldSeparatorValue="&quot;;&quot;" RowSeparatorValue="&quot;\n&quot;"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_5Rh48ZoQEeeiWLumXzh2Bg" name="default" dataManager="_5Rh48JoQEeeiWLumXzh2Bg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_5Rh48poQEeeiWLumXzh2Bg" id="_sH03wJoQEeeiWLumXzh2Bg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5Rh485oQEeeiWLumXzh2Bg" label="Column0" length="1799679" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

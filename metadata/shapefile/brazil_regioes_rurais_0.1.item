@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DisyShapeFile="http://www.disy.net/talend/shapefile" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <DisyShapeFile:ShapeFileConnection xmi:id="_DMnx8KdrEeeMwrObzI9oxw" name="brazil_regioes_rurais" dataPackage="_DMnx8adrEeeMwrObzI9oxw" mappingTypeUsed="true" mappingTypeId="shapefile_id" ShapeFilePath="/home/mandon/Bureau/projet/data/Brazil/spatial/regioes_rurais_2015_shapefile/RR_Regioes_Rurais2015.shp" Encoding="ISO-8859-1" SpatialReferenceSystem="GEOGCS[&quot;SIRGAS 2000&quot;,DATUM[&quot;D_SIRGAS2000&quot;,SPHEROID[&quot;Geodetic_Reference_System_of_1980&quot;,6378137.0,298.2572221009113]],PRIMEM[&quot;Greenwich&quot;,0.0],UNIT[&quot;Degree&quot;,0.0174532925199433]]"/>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_DMnx8adrEeeMwrObzI9oxw" name="default" dataManager="_DMnx8KdrEeeMwrObzI9oxw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_DMnx8qdrEeeMwrObzI9oxw" id="_zoCpwKdqEeeMwrObzI9oxw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DMnx86drEeeMwrObzI9oxw" name="CODIGO_R" id="CODIGO_R" label="CODIGO_R" length="50" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DMnx9KdrEeeMwrObzI9oxw" name="NOMEREGIAO" id="NOMEREGIAO" label="NOMEREGIAO" length="254" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DMnx9adrEeeMwrObzI9oxw" name="COD_NOME" id="COD_NOME" label="COD_NOME" length="254" sourceType="CHARACTER" talendType="id_String"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_DMnx9qdrEeeMwrObzI9oxw" name="SHAPE" id="SHAPE" label="SHAPE" sourceType="POLYGON" talendType="id_DGeometry"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
