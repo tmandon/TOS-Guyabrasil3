@@ -350,13 +350,13 @@
     <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="tbl_localites_bra" name="tPostgresqlInput_2">
-      <column comment="" key="false" length="8" name="CD_LOCAL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="8" name="CD_LOCAL" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="100" name="NM_LOCAL" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
-      <column comment="" key="false" length="6" name="MUN_IBGE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+      <column comment="" key="false" length="6" name="MUN_IBGE" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true">
         <additionalField key="Comment" value=""/>
       </column>
       <column comment="" key="false" length="17" name="LONGITUD" nullable="true" pattern="" precision="17" sourceType="FLOAT8" type="id_Double" usefulColumn="true">
@@ -390,10 +390,10 @@
       <column comment="" key="false" length="-1" name="source" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="area_bra">
-        <mapperTableEntries name="id" expression="row1.CD_LOCAL+&quot;/&quot;+row1.MUN_IBGE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="id" expression="row1.CD_LOCAL.toString()+&quot;/&quot;+row1.MUN_IBGE.toString()" type="id_String" nullable="true"/>
         <mapperTableEntries name="name" expression="row1.NM_LOCAL" type="id_String" nullable="true"/>
         <mapperTableEntries name="x_coordinate" expression="row1.LONGITUD" type="id_Double" nullable="true"/>
         <mapperTableEntries name="y_coordinate" expression="row1.LATITUDE" type="id_Double" nullable="true"/>
@@ -401,9 +401,9 @@
         <mapperTableEntries name="source" expression="&quot;B&quot;" type="id_String" nullable="true"/>
       </outputTables>
       <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
-        <mapperTableEntries name="CD_LOCAL" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CD_LOCAL" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="NM_LOCAL" type="id_String" nullable="true"/>
-        <mapperTableEntries name="MUN_IBGE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MUN_IBGE" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="LONGITUD" type="id_Double" nullable="true"/>
         <mapperTableEntries name="LATITUDE" type="id_Double" nullable="true"/>
       </inputTables>

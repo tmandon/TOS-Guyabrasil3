@@ -107,6 +107,10 @@
     <routinesParameter id="_rhmFUNSSEeWKGevmmmeHnQ" name="TalendDataGenerator"/>
     <routinesParameter id="_rhxEcNSSEeWKGevmmmeHnQ" name="TalendDate"/>
     <routinesParameter id="_rh6OYNSSEeWKGevmmmeHnQ" name="TalendString"/>
+    <routinesParameter id="_a04ScJ60Eee5h6EnIfdfZQ" name="DGeometryCalculator"/>
+    <routinesParameter id="_az4M4J60Eee5h6EnIfdfZQ" name="DGeometryFilter"/>
+    <routinesParameter id="_a02dQJ60Eee5h6EnIfdfZQ" name="DGeometryOperation"/>
+    <routinesParameter id="_a01PIJ60Eee5h6EnIfdfZQ" name="DGeometryQuality"/>
   </parameters>
   <node componentName="tWaitForFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWaitForFile_1" show="false"/>
@@ -505,22 +509,6 @@
     <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
   </node>
-  <node componentName="tFileRename" componentVersion="0.100" offsetLabelX="0" offsetLabelY="0" posX="608" posY="192">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileRename_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
-    <elementParameter field="FILE" name="NEW_FILENAME" value="((String)globalMap.get(&quot;tFileList_1_CURRENT_FILEPATH&quot;))"/>
-    <elementParameter field="CHECK" name="FAILON" value="true"/>
-    <elementParameter field="TEXT" name="LABEL" value="Rename"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" label="out2" name="tFileRename_1">
-      <column comment="" defaultValue="" key="false" length="10" name="OBJECTID" nullable="true" pattern="" precision="-1" sourceType="INT8" type="id_Long" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="24" name="X" nullable="true" pattern="" precision="15" sourceType="INT8" type="id_Long" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="24" name="Y" nullable="true" pattern="" precision="15" sourceType="INT8" type="id_Long" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="NOM_LOCALI" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="255" name="REMARQUE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tWaitForFile_1" offsetLabelX="11" offsetLabelY="-1" source="tWaitForFile_1" target="tFileList_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
   </connection>
@@ -587,9 +575,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostgresqlOutput_1" offsetLabelX="0" offsetLabelY="0" source="tPostgresqlOutput_1" target="tFileRename_1">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
-  </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileList_2" offsetLabelX="0" offsetLabelY="0" source="tFileList_2" target="tFileUnarchive_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
   </connection>
@@ -618,11 +603,6 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileUnarchive_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileRename_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>

@@ -556,6 +556,10 @@
       <relatedItems xmi:id="_PKrAja4yEeawTeLkybhBsQ" id="Mathematical" version="Latest" type="routine"/>
       <relatedItems xmi:id="_guWOYJbsEee19L6LhWnDmg" id="_zXoqINS2EeWy4NNdSEUXpw" version="Latest" type="property"/>
       <relatedItems xmi:id="_6sXaIJbtEee19L6LhWnDmg" id="_zXoqINS2EeWy4NNdSEUXpw - tbl_municipalites_bra" version="Latest" type="schema"/>
+      <relatedItems xmi:id="_vIDuIM3PEeexzfBud_91Wg" id="DGeometryQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_vIDuIc3PEeexzfBud_91Wg" id="DGeometryCalculator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_vIDuIs3PEeexzfBud_91Wg" id="DGeometryOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_vIDuI83PEeexzfBud_91Wg" id="DGeometryFilter" version="Latest" type="routine"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_PKrnkK4yEeawTeLkybhBsQ">
       <baseItem xmi:id="_PKrnka4yEeawTeLkybhBsQ" id="_xcAsICfSEea6T_XvAxcbfg" version="0.1" type="job"/>
@@ -1013,6 +1017,46 @@
       <relatedItems xmi:id="_MZTRz8B2Eee6K5n5F31Dvg" id="GeometryUtility" version="Latest" type="routine"/>
       <relatedItems xmi:id="_MZTR0MB2Eee6K5n5F31Dvg" id="DGeometryFilter" version="Latest" type="routine"/>
       <relatedItems xmi:id="_MZTR0cB2Eee6K5n5F31Dvg" id="GeometryOperation" version="Latest" type="routine"/>
+    </ItemsRelations>
+    <ItemsRelations xmi:id="_yMj9gNW9Eeew-qDfO53ZUQ">
+      <baseItem xmi:id="_yMj9gdW9Eeew-qDfO53ZUQ" id="_IF9o0NW1Eeew-qDfO53ZUQ" version="0.1" type="job"/>
+      <relatedItems xmi:id="_yMj9gtW9Eeew-qDfO53ZUQ" id="_zXoqINS2EeWy4NNdSEUXpw" version="Latest" type="property"/>
+      <relatedItems xmi:id="_yMj9g9W9Eeew-qDfO53ZUQ" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yMj9hNW9Eeew-qDfO53ZUQ" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yMj9hdW9Eeew-qDfO53ZUQ" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yMj9htW9Eeew-qDfO53ZUQ" id="DGeometryQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yMj9h9W9Eeew-qDfO53ZUQ" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yMj9iNW9Eeew-qDfO53ZUQ" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yMj9idW9Eeew-qDfO53ZUQ" id="GeoOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yMj9itW9Eeew-qDfO53ZUQ" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yMj9i9W9Eeew-qDfO53ZUQ" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yMj9jNW9Eeew-qDfO53ZUQ" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yMj9jdW9Eeew-qDfO53ZUQ" id="DGeometryCalculator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yMj9jtW9Eeew-qDfO53ZUQ" id="DGeometryOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yMj9j9W9Eeew-qDfO53ZUQ" id="OpenStreetMap" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yMj9kNW9Eeew-qDfO53ZUQ" id="GeometryUtility" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yMj9kdW9Eeew-qDfO53ZUQ" id="DGeometryFilter" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_yMj9ktW9Eeew-qDfO53ZUQ" id="GeometryOperation" version="Latest" type="routine"/>
+    </ItemsRelations>
+    <ItemsRelations xmi:id="_x4KCkNnVEeeTf6NUzPDx9A">
+      <baseItem xmi:id="_x4KCkdnVEeeTf6NUzPDx9A" id="_M7KPUNmpEeeTf6NUzPDx9A" version="0.1" type="job"/>
+      <relatedItems xmi:id="_x4KCktnVEeeTf6NUzPDx9A" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_x4KCk9nVEeeTf6NUzPDx9A" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_x4KClNnVEeeTf6NUzPDx9A" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_x4KCldnVEeeTf6NUzPDx9A" id="DGeometryQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_x4KCltnVEeeTf6NUzPDx9A" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_x4KCl9nVEeeTf6NUzPDx9A" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_x4KCmNnVEeeTf6NUzPDx9A" id="GeoOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_x4KCmdnVEeeTf6NUzPDx9A" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_x4KCmtnVEeeTf6NUzPDx9A" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_x4KCm9nVEeeTf6NUzPDx9A" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_x4KCnNnVEeeTf6NUzPDx9A" id="DGeometryCalculator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_x4KCndnVEeeTf6NUzPDx9A" id="DGeometryOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_x4KCntnVEeeTf6NUzPDx9A" id="OpenStreetMap" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_x4KCn9nVEeeTf6NUzPDx9A" id="GeometryUtility" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_x4KCoNnVEeeTf6NUzPDx9A" id="DGeometryFilter" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_x4KCodnVEeeTf6NUzPDx9A" id="GeometryOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_n7BRgNp5EeeUY4HJpNJKZw" id="_zXoqINS2EeWy4NNdSEUXpw" version="Latest" type="property"/>
     </ItemsRelations>
     <deletedFolders>process/demo</deletedFolders>
     <deletedFolders>process/RestServices</deletedFolders>

@@ -1,0 +1,19 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<expression:EMFExpression xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:expression="http:///expression.ecore" id="tMap_1=>" expression="row1.AGLOMERA == null || StringHandling.TRIM(row1.AGLOMERA).equals(&quot;&quot;) ? 0 : Integer.parseInt(StringHandling.TRIM(row1.AGLOMERA))">
+  <variables name="row1.CD_LOCAL" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.NM_LOCAL" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.UF_IBGE" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.MUN_IBGE" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.NU_PREDI" value="null" talendType="id_Long" nullable="true"/>
+  <variables name="row1.NU_HABIT" value="null" talendType="id_Long" nullable="true"/>
+  <variables name="row1.DT_REG" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row1.DT_ATUAL" value="null" talendType="id_Date" nullable="true"/>
+  <variables name="row1.LONGITUD" value="null" talendType="id_Double" nullable="true"/>
+  <variables name="row1.LATITUDE" value="null" talendType="id_Double" nullable="true"/>
+  <variables name="row1.ZONA" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.CATEGORI" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.AGLOMERA" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.STATUS" value="null" talendType="id_String" nullable="true"/>
+  <variables name="row1.CODSEI" value="null" talendType="id_Long" nullable="true"/>
+  <variables name="row1.COPOBASE" value="null" talendType="id_Long" nullable="true"/>
+</expression:EMFExpression>

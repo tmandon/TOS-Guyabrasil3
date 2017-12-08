@@ -155,41 +155,41 @@
     <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out2" name="out2">
-      <column comment="" key="false" length="8" name="CD_LOCAL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CD_LOCAL" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="NM_LOCAL" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="UF_IBGE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="MUN_IBGE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="UF_IBGE" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="MUN_IBGE" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="9" name="NU_PREDI" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="9" name="NU_HABIT" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="DT_REG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="DT_ATUAL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="18" name="LONGITUD" nullable="true" pattern="" precision="9" sourceType="" type="id_Double" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="18" name="LATITUDE" nullable="true" pattern="" precision="9" sourceType="" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="ZONA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="CATEGORI" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="AGLOMERA" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="STATUS" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ZONA" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CATEGORI" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AGLOMERA" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="STATUS" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="9" name="CODSEI" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="9" name="COPOBASE" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2">
-        <mapperTableEntries name="CD_LOCAL" expression="row1.CD_LOCAL " type="id_String" nullable="true"/>
+        <mapperTableEntries name="CD_LOCAL" expression="Integer.parseInt(StringHandling.TRIM(row1.CD_LOCAL)) " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="NM_LOCAL" expression="row1.NM_LOCAL " type="id_String" nullable="true"/>
-        <mapperTableEntries name="UF_IBGE" expression="row1.UF_IBGE " type="id_String" nullable="true"/>
-        <mapperTableEntries name="MUN_IBGE" expression="row1.MUN_IBGE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="UF_IBGE" expression="Integer.parseInt(StringHandling.TRIM(row1.UF_IBGE))" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="MUN_IBGE" expression="Integer.parseInt(StringHandling.TRIM(row1.MUN_IBGE))" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="NU_PREDI" expression="row1.NU_PREDI " type="id_Long" nullable="true"/>
         <mapperTableEntries name="NU_HABIT" expression="row1.NU_HABIT " type="id_Long" nullable="true"/>
         <mapperTableEntries name="DT_REG" expression="row1.DT_REG " type="id_Date" nullable="true"/>
         <mapperTableEntries name="DT_ATUAL" expression="row1.DT_ATUAL " type="id_Date" nullable="true"/>
         <mapperTableEntries name="LONGITUD" expression="row1.LONGITUD " type="id_Double" nullable="true"/>
         <mapperTableEntries name="LATITUDE" expression="row1.LATITUDE " type="id_Double" nullable="true"/>
-        <mapperTableEntries name="ZONA" expression="row1.ZONA " type="id_String" nullable="true"/>
-        <mapperTableEntries name="CATEGORI" expression="row1.CATEGORI " type="id_String" nullable="true"/>
-        <mapperTableEntries name="AGLOMERA" expression="row1.AGLOMERA " type="id_String" nullable="true"/>
-        <mapperTableEntries name="STATUS" expression="row1.STATUS " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ZONA" expression="row1.ZONA == null || StringHandling.TRIM(row1.ZONA).equals(&quot;&quot;) ? 0 : Integer.parseInt(StringHandling.TRIM(row1.ZONA)) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CATEGORI" expression="row1.CATEGORI == null || StringHandling.TRIM(row1.CATEGORI).equals(&quot;&quot;) ? 99 : Integer.parseInt(StringHandling.TRIM(row1.CATEGORI)) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="AGLOMERA" expression="row1.AGLOMERA == null || StringHandling.TRIM(row1.AGLOMERA).equals(&quot;&quot;) ? 0 : Integer.parseInt(StringHandling.TRIM(row1.AGLOMERA)) " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="STATUS" expression="Integer.parseInt(StringHandling.TRIM(row1.STATUS))" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="CODSEI" expression="row1.CODSEI " type="id_Long" nullable="true"/>
         <mapperTableEntries name="COPOBASE" expression="row1.COPOBASE " type="id_Long" nullable="true"/>
       </outputTables>
@@ -334,38 +334,38 @@
     <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="out2" name="tPostgresqlOutput_1">
-      <column comment="" key="false" length="8" name="CD_LOCAL" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CD_LOCAL" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="NM_LOCAL" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="UF_IBGE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="MUN_IBGE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="UF_IBGE" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="MUN_IBGE" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="9" name="NU_PREDI" nullable="true" pattern="" precision="-1" sourceType="INT8" type="id_Long" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="9" name="NU_HABIT" nullable="true" pattern="" precision="-1" sourceType="INT8" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="DT_REG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="DT_ATUAL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="18" name="LONGITUD" nullable="true" pattern="" precision="9" sourceType="FLOAT8" type="id_Double" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="18" name="LATITUDE" nullable="true" pattern="" precision="9" sourceType="FLOAT8" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="ZONA" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="CATEGORI" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="AGLOMERA" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="STATUS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ZONA" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CATEGORI" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AGLOMERA" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="STATUS" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="9" name="CODSEI" nullable="true" pattern="" precision="-1" sourceType="INT8" type="id_Long" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="9" name="COPOBASE" nullable="true" pattern="" precision="-1" sourceType="INT8" type="id_Long" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" label="out2" name="REJECT">
-      <column comment="" key="false" length="8" name="CD_LOCAL" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="CD_LOCAL" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="100" name="NM_LOCAL" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="UF_IBGE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="MUN_IBGE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="UF_IBGE" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="MUN_IBGE" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="9" name="NU_PREDI" nullable="true" pattern="" precision="-1" sourceType="INT8" type="id_Long" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="9" name="NU_HABIT" nullable="true" pattern="" precision="-1" sourceType="INT8" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="DT_REG" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="DT_ATUAL" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="18" name="LONGITUD" nullable="true" pattern="" precision="9" sourceType="FLOAT8" type="id_Double" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="18" name="LATITUDE" nullable="true" pattern="" precision="9" sourceType="FLOAT8" type="id_Double" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="ZONA" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="CATEGORI" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="3" name="AGLOMERA" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="1" name="STATUS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ZONA" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="CATEGORI" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="AGLOMERA" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="STATUS" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="9" name="CODSEI" nullable="true" pattern="" precision="-1" sourceType="INT8" type="id_Long" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="9" name="COPOBASE" nullable="true" pattern="" precision="-1" sourceType="INT8" type="id_Long" usefulColumn="true"/>
       <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
