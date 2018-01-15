@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2017-11-07T09:09:01.389+0100">
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2018-01-12T09:44:30.402+0100">
   <deletedItems id="_QKNNUGZ8EeWm5YvsrIoYzQ" path="demo" type="PROCESS"/>
   <deletedItems id="_5hnTkNTLEeWy4NNdSEUXpw" path="" type="METADATA_FILE_EXCEL"/>
   <deletedItems id="_nb8P8BxOEeaJgJiyJuPMJw" path="Harmonization" type="PROCESS"/>
@@ -19,4 +19,11 @@
   <deletedItems id="_MfUncLMTEeedHe4ClGb8PQ" path="OUTPUTS" type="PROCESS"/>
   <deletedItems id="_KwVU4LVqEeee7snZRDQezQ" path="" type="PROCESS"/>
   <deletedItems id="_3cjXcF12EeaIMcrzDXAaHw" path="INPUTS/Brasil" type="PROCESS"/>
+  <deletedItems id="_IBuoEKTsEee1wdEd1UYYAA" path="Spatial_input/OSM_Data_Integrator" type="PROCESS"/>
+  <deletedItems id="_vu9cICZsEeatrNj8pF_3Kg" path="Spatial_input/OSM_Data_Integrator" type="PROCESS"/>
+  <deletedItems id="_-1UXwKXjEd2d2ckj4GiNSQ" path="Spatial_input/OSM_Data_Integrator" type="PROCESS"/>
+  <deletedItems id="_IHu9IKXKEd2Sir8Q3WXATg" path="Spatial_input/OSM_Data_Integrator" type="PROCESS"/>
+  <deletedItems id="_EoIpwKXKEd2Sir8Q3WXATg" path="Spatial_input/OSM_Data_Integrator" type="PROCESS"/>
+  <deletedItems id="_oiId0KXIEd2Sir8Q3WXATg" path="Spatial_input/OSM_Data_Integrator" type="PROCESS"/>
+  <deletedItems id="_XVq0sCZ6EeatrNj8pF_3Kg" path="Spatial_input/OSM_Data_Integrator" type="PROCESS"/>
 </recyclebin:RecycleBin>

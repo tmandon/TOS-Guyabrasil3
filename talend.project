@@ -651,6 +651,7 @@
       <relatedItems xmi:id="_h8ihEqdZEeeMwrObzI9oxw" id="DGeometryCalculator" version="Latest" type="routine"/>
       <relatedItems xmi:id="_h8ihE6dZEeeMwrObzI9oxw" id="DGeometryFilter" version="Latest" type="routine"/>
       <relatedItems xmi:id="_9k9NcKjsEeeUwMXAYnpboA" id="_nywUIKjmEeeUwMXAYnpboA" version="Latest" type="job"/>
+      <relatedItems xmi:id="_qlQX4Pd9Eeex3JEDr7w4zg" id="_M7KPUNmpEeeTf6NUzPDx9A" version="Latest" type="job"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_bBHZwKH4EeeGvq--pLkZQA">
       <baseItem xmi:id="_bBHZwaH4EeeGvq--pLkZQA" id="_FYoOYKH4EeeGvq--pLkZQA" version="0.1" type="job"/>
@@ -978,6 +979,7 @@
       <relatedItems xmi:id="_jTONRLSsEeeCS8iYJsLJKw" id="GeometryUtility" version="Latest" type="routine"/>
       <relatedItems xmi:id="_jTONRbSsEeeCS8iYJsLJKw" id="DGeometryFilter" version="Latest" type="routine"/>
       <relatedItems xmi:id="_jTONRrSsEeeCS8iYJsLJKw" id="GeometryOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_luBGsPd-Eeex3JEDr7w4zg" id="_QSxlEMBzEee6K5n5F31Dvg" version="Latest" type="job"/>
     </ItemsRelations>
     <ItemsRelations xmi:id="_17gB0LmMEeegNbyLr5O0Tw">
       <baseItem xmi:id="_17gB0bmMEeegNbyLr5O0Tw" id="_MfVQkLmMEeegNbyLr5O0Tw" version="0.1" type="job"/>
@@ -1058,11 +1060,36 @@
       <relatedItems xmi:id="_x4KCodnVEeeTf6NUzPDx9A" id="GeometryOperation" version="Latest" type="routine"/>
       <relatedItems xmi:id="_n7BRgNp5EeeUY4HJpNJKZw" id="_zXoqINS2EeWy4NNdSEUXpw" version="Latest" type="property"/>
     </ItemsRelations>
+    <ItemsRelations xmi:id="_xADboPd-Eeex3JEDr7w4zg">
+      <baseItem xmi:id="_xADbofd-Eeex3JEDr7w4zg" id="_efya4Pd9Eeex3JEDr7w4zg" version="0.1" type="job"/>
+      <relatedItems xmi:id="_xADbovd-Eeex3JEDr7w4zg" id="_FYoOYKH4EeeGvq--pLkZQA" version="Latest" type="job"/>
+      <relatedItems xmi:id="_xADbo_d-Eeex3JEDr7w4zg" id="_S85fALSsEeeCS8iYJsLJKw" version="Latest" type="job"/>
+      <relatedItems xmi:id="_xADbpPd-Eeex3JEDr7w4zg" id="_jczSkKdcEeeMwrObzI9oxw" version="Latest" type="job"/>
+      <relatedItems xmi:id="_xADbpfd-Eeex3JEDr7w4zg" id="_JyWLsKp_Eee28ujA8pzvFQ" version="Latest" type="job"/>
+      <relatedItems xmi:id="_xADbpvd-Eeex3JEDr7w4zg" id="_x38zcJk4EeecoOje4Wdpow" version="Latest" type="job"/>
+      <relatedItems xmi:id="_xADbp_d-Eeex3JEDr7w4zg" id="Numeric" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xADbqPd-Eeex3JEDr7w4zg" id="TalendString" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xADbqfd-Eeex3JEDr7w4zg" id="DataOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xADbqvd-Eeex3JEDr7w4zg" id="DGeometryQuality" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xADbq_d-Eeex3JEDr7w4zg" id="StringHandling" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xADbrPd-Eeex3JEDr7w4zg" id="TalendDataGenerator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xADbrfd-Eeex3JEDr7w4zg" id="GeoOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xADbrvd-Eeex3JEDr7w4zg" id="TalendDate" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xADbr_d-Eeex3JEDr7w4zg" id="Mathematical" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xADbsPd-Eeex3JEDr7w4zg" id="Relational" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xADbsfd-Eeex3JEDr7w4zg" id="DGeometryCalculator" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xADbsvd-Eeex3JEDr7w4zg" id="DGeometryOperation" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xADbs_d-Eeex3JEDr7w4zg" id="OpenStreetMap" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xADbtPd-Eeex3JEDr7w4zg" id="GeometryUtility" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xADbtfd-Eeex3JEDr7w4zg" id="DGeometryFilter" version="Latest" type="routine"/>
+      <relatedItems xmi:id="_xADbtvd-Eeex3JEDr7w4zg" id="GeometryOperation" version="Latest" type="routine"/>
+    </ItemsRelations>
     <deletedFolders>process/demo</deletedFolders>
     <deletedFolders>process/RestServices</deletedFolders>
     <deletedFolders>process/OSM_Data_Integrator</deletedFolders>
     <deletedFolders>process/Spatial_input/OSM_Data_Integrator/OpenStreetMap</deletedFolders>
     <deletedFolders>process/OUTPUTS/ElasticSearch</deletedFolders>
+    <deletedFolders>process/Spatial_input/OSM_Data_Integrator</deletedFolders>
     <migrationTask xmi:id="_rTszQNSSEeWKGevmmmeHnQ" id="org.talend.designer.core.ui.preferences.migration.ChangeMysqlVersionForProjectSetting" breaks="5.2.0" version="5.1.3" status="ok"/>
     <migrationTask xmi:id="_rTszQdSSEeWKGevmmmeHnQ" id="org.talend.designer.core.ui.preferences.migration.ChangeOracleVersionForProjectSetting" breaks="5.2.0" version="5.2.1" status="ok"/>
     <migrationTask xmi:id="_rTszQtSSEeWKGevmmmeHnQ" id="org.talend.designer.maven.ui.ConfigMavenRepositoryRemove" breaks="6.0.1" version="6.0.2" status="ok"/>
