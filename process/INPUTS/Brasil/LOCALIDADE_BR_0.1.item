@@ -58,7 +58,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="true"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/home/mandon/Bureau/projet/logstalend&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/home/user/Bureau/projet/logstalend&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="TalendDate.getDate(&quot;CCYY-MM-DD&quot;)+&quot;_stats.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="TalendDate.getDate(&quot;CCYY-MM-DD&quot;)+&quot;.log&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -173,7 +173,7 @@
       <column comment="" defaultValue="" key="false" length="9" name="COPOBASE" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties shellMaximized="true"/>
+      <uiProperties/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2">
         <mapperTableEntries name="CD_LOCAL" expression="Integer.parseInt(StringHandling.TRIM(row1.CD_LOCAL)) " type="id_Integer" nullable="true"/>
@@ -372,36 +372,9 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tWaitForFile" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="96">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWaitForFile_1" show="false"/>
-    <elementParameter field="TEXT" name="WAIT" value="5"/>
-    <elementParameter field="TEXT" name="MAX_ITERATIONS" value=""/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/home/mandon/Bureau/projet/data/Brazil/epidemiological/data&quot;"/>
-    <elementParameter field="TEXT" name="FILEMASK" value="&quot;LOCALIDA.zip&quot;"/>
-    <elementParameter field="CHECK" name="INCLUDE_SUBDIR" value="false"/>
-    <elementParameter field="CHECK" name="CASE_SENSITIVE" value="true"/>
-    <elementParameter field="CHECK" name="INCLUDE_PRESENT" value="true"/>
-    <elementParameter field="CLOSED_LIST" name="ACTION_ON" value="filecreated"/>
-    <elementParameter field="CLOSED_LIST" name="THEN" value="exitloop"/>
-    <elementParameter field="CHECK" name="WAIT_RELEASE" value="false"/>
-    <elementParameter field="TEXT" name="INTERVAL_CHECK" value="500" show="false"/>
-    <elementParameter field="CHECK" name="NON_UPDATE" value="false" show="false"/>
-    <elementParameter field="TEXT" name="LABEL" value="Listener"/>
-    <elementParameter field="TEXT" name="HINT" value="&lt;b>__UNIQUE_NAME__&lt;/b>&lt;br>__COMMENT__"/>
-    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
-    <metadata connector="FLOW" name="tWaitForFile_1">
-      <column defaultValue="" key="false" length="0" name="CURRENT_ITERATION" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="PRESENT_FILE" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="DELETED_FILE" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="CREATED_FILE" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="UPDATED_FILE" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="FILENAME" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-      <column defaultValue="" key="false" length="255" name="NOT_UPDATED_FILE" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
-    </metadata>
-  </node>
   <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_1" show="false"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/home/mandon/Bureau/projet/data/Brazil/epidemiological/data&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/home/user/Bureau/projet/data/Brazil/epidemiological/data&quot;"/>
     <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
     <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
     <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
@@ -425,7 +398,7 @@
   </node>
   <node componentName="tFileList" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileList_2" show="false"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/home/mandon/Bureau/projet/data/Brazil/epidemiological/data&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/home/user/Bureau/projet/data/Brazil/epidemiological/data&quot;"/>
     <elementParameter field="CLOSED_LIST" name="LIST_MODE" value="FILES"/>
     <elementParameter field="CHECK" name="INCLUDSUBDIR" value="false"/>
     <elementParameter field="CLOSED_LIST" name="CASE_SENSITIVE" value="YES"/>
@@ -450,7 +423,7 @@
   <node componentName="tFileUnarchive" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileUnarchive_1" show="false"/>
     <elementParameter field="FILE" name="ZIPFILE" value="((String)globalMap.get(&quot;tFileList_2_CURRENT_FILEPATH&quot;))"/>
-    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/home/mandon/Bureau/projet/data/Brazil/epidemiological/data&quot;"/>
+    <elementParameter field="DIRECTORY" name="DIRECTORY" value="&quot;/home/user/Bureau/projet/data/Brazil/epidemiological/data&quot;"/>
     <elementParameter field="CHECK" name="ROOTNAME" value="false"/>
     <elementParameter field="CHECK" name="INTEGRITY" value="false"/>
     <elementParameter field="CHECK" name="EXTRACTPATH" value="true"/>
@@ -733,9 +706,6 @@
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="out2" show="false"/>
   </connection>
-  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tWaitForFile_1" offsetLabelX="0" offsetLabelY="0" source="tWaitForFile_1" target="tFileList_2">
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
-  </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileList_1" offsetLabelX="0" offsetLabelY="0" source="tFileList_1" target="tDBFInput_1">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
   </connection>
@@ -750,11 +720,6 @@
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBFInput_1" show="false"/>
     <elementParameter field="TEXT" name="SUBJOB_TITLE" value="                                               Data reading, conversion and loading to Postgresql Database"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150"/>
-    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
-  </subjob>
-  <subjob>
-    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWaitForFile_1" show="false"/>
-    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
   <subjob>

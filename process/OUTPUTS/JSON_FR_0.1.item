@@ -56,7 +56,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" value="true"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/home/mandon/Bureau/projet/logstalend&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;/home/user/Bureau/projet/logstalend&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" value="TalendDate.getDate(&quot;CCYY-MM-DD&quot;)+&quot;_stats.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" value="TalendDate.getDate(&quot;CCYY-MM-DD&quot;)+&quot;.log&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
@@ -95,6 +95,11 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
     <routinesParameter id="_a04ScJ60Eee5h6EnIfdfZQ" name="DGeometryCalculator"/>
     <routinesParameter id="_az4M4J60Eee5h6EnIfdfZQ" name="DGeometryFilter"/>
     <routinesParameter id="_a02dQJ60Eee5h6EnIfdfZQ" name="DGeometryOperation"/>
@@ -166,7 +171,7 @@
   </node>
   <node componentName="tFileOutputJSON" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="96">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputJSON_1" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/home/mandon/Bureau/projet/Outfiles/center_fr.json&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/home/user/Bureau/projet/Outfiles/center_fr.json&quot;"/>
     <elementParameter field="CHECK" name="GENERATE_JSON_ARRAY" value="false"/>
     <elementParameter field="TEXT" name="DATABLOCKNAME" value="&quot;data&quot;"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
@@ -274,7 +279,7 @@
   </node>
   <node componentName="tFileOutputJSON" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="224">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputJSON_2" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/home/mandon/Bureau/projet/Outfiles/diagnosis_fr.json&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/home/user/Bureau/projet/Outfiles/diagnosis_fr.json&quot;"/>
     <elementParameter field="CHECK" name="GENERATE_JSON_ARRAY" value="false"/>
     <elementParameter field="TEXT" name="DATABLOCKNAME" value="&quot;data&quot;"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
@@ -377,7 +382,7 @@
   </node>
   <node componentName="tFileOutputJSON" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputJSON_3" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/home/mandon/Bureau/projet/Outfiles/observation_fr.json&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/home/user/Bureau/projet/Outfiles/observation_fr.json&quot;"/>
     <elementParameter field="CHECK" name="GENERATE_JSON_ARRAY" value="false"/>
     <elementParameter field="TEXT" name="DATABLOCKNAME" value="&quot;data&quot;"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
@@ -459,7 +464,7 @@
   </node>
   <node componentName="tFileOutputJSON" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="160">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputJSON_4" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/home/mandon/Bureau/projet/Outfiles/patient_fr.json&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/home/user/Bureau/projet/Outfiles/patient_fr.json&quot;"/>
     <elementParameter field="CHECK" name="GENERATE_JSON_ARRAY" value="false"/>
     <elementParameter field="TEXT" name="DATABLOCKNAME" value="&quot;data&quot;"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
@@ -533,7 +538,7 @@
   </node>
   <node componentName="tFileOutputJSON" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="832" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputJSON_5" show="false"/>
-    <elementParameter field="FILE" name="FILENAME" value="&quot;/home/mandon/Bureau/projet/Outfiles/habitationzone_fr.json&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;/home/user/Bureau/projet/Outfiles/habitationzone_fr.json&quot;"/>
     <elementParameter field="CHECK" name="GENERATE_JSON_ARRAY" value="false"/>
     <elementParameter field="TEXT" name="DATABLOCKNAME" value="&quot;data&quot;"/>
     <elementParameter field="CHECK" name="CREATE" value="true"/>
