@@ -20,15 +20,7 @@
     <sheetColumns>Q</sheetColumns>
     <sheetColumns>R</sheetColumns>
   </TalendMetadata:FileExcelConnection>
-  <orgomg.cwm.resource.record:RecordFile xmi:id="_5hohsdTLEeWy4NNdSEUXpw" name="default" dataManager="_5hohsNTLEeWy4NNdSEUXpw">
-    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_5hohstTLEeWy4NNdSEUXpw" properties="deleted&#xA;&#xA;true&#xA;&#xA;" id="_spDFsNTLEeWy4NNdSEUXpw" label="metadata">
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5hohs9TLEeWy4NNdSEUXpw" label="A" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5hohtNTLEeWy4NNdSEUXpw" label="B" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5hohtdTLEeWy4NNdSEUXpw" label="C" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5hohttTLEeWy4NNdSEUXpw" label="D" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_5hoht9TLEeWy4NNdSEUXpw" label="E" length="30" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
-    </ownedElement>
-  </orgomg.cwm.resource.record:RecordFile>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_5hohsdTLEeWy4NNdSEUXpw" name="default" dataManager="_5hohsNTLEeWy4NNdSEUXpw"/>
   <orgomg.cwm.resource.record:RecordFile xmi:id="_n44TMOzxEeWtZq6obUCC3A" name="default" dataManager="_5hohsNTLEeWy4NNdSEUXpw">
     <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_n44TMezxEeWtZq6obUCC3A" id="_kAvkAOzxEeWtZq6obUCC3A" label="Palu">
       <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_n44TMuzxEeWtZq6obUCC3A" label="A" length="6" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>

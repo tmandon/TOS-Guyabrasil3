@@ -366,7 +366,7 @@
       <column comment="" defaultValue="" key="false" length="6" name="autrephenomene" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Boolean" originalLength="6" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out2">
         <mapperTableEntries name="codecs" expression="row1.codecs " type="id_String" nullable="true"/>
@@ -383,8 +383,8 @@
         <mapperTableEntries name="diarrhee" expression="row1.diarrhee " type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="toux" expression="row1.toux " type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="fievrerespiratoire" expression="row1.fievrerespiratoire " type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="palufalci" expression="row1.palufalci== null ? false : row1.palufalci" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="paluautre" expression="row1.paluautre == null ? false : row1.paluautre " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="palufalci" expression="row1.palufalci== null ? false : row1.palufalci " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="paluautre" expression="(row1.diagnosticprincipal!=null&amp;&amp;row1.diagnosticprincipal.toUpperCase().contains(&quot;VIVAX&quot;))||&#xA;(row1.autrediagnostic!=null&amp;&amp;row1.autrediagnostic.toUpperCase().contains(&quot;PRIMAQUINE&quot;))? true : row1.paluautre == null ? false : row1.paluautre " type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="fievreeruption" expression="row1.fievreeruption " type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="autrephenomene" expression="row1.autrephenomene " type="id_Boolean" nullable="true"/>
       </outputTables>
@@ -497,24 +497,24 @@
       <column comment="" defaultValue="" key="false" length="6" name="autrephenomene" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Boolean" originalLength="6" usefulColumn="true"/>
     </metadata>
     <metadata connector="UNIQUE" name="UNIQUE">
-      <column comment="" key="false" length="6" name="codecs" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="6" usefulColumn="true"/>
-      <column comment="" key="false" length="12" name="dateconsultation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Date" originalLength="12" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="numeropatient" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="13" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="agepatient" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="" type="id_Float" originalLength="10" usefulColumn="true"/>
-      <column comment="" key="false" length="11" name="sexepatient" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" originalLength="5" usefulColumn="true"/>
-      <column comment="" key="false" length="16" name="typeconsultation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="16" usefulColumn="true"/>
-      <column comment="" key="false" length="19" name="diagnosticprincipal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="19" usefulColumn="true"/>
-      <column comment="" key="false" length="60" name="autrediagnostic" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="60" usefulColumn="true"/>
-      <column comment="" key="false" length="14" name="devenirpatient" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="codecs" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="dateconsultation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="13" name="numeropatient" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="agepatient" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="7" sourceType="" type="id_Float" usefulColumn="true"/>
+      <column comment="" key="false" length="11" name="sexepatient" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" length="16" name="typeconsultation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="19" name="diagnosticprincipal" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="autrediagnostic" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="14" name="devenirpatient" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="dengue" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="serologiedengue" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="diarrhee" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="toux" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Boolean" originalLength="6" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="fievrerespiratoire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Boolean" originalLength="6" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="palufalci" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Boolean" originalLength="6" usefulColumn="true"/>
-      <column comment="" key="false" length="6" name="paluautre" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Boolean" originalLength="6" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="toux" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="fievrerespiratoire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="palufalci" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="6" name="paluautre" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
       <column comment="" key="false" length="5" name="fievreeruption" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="6" name="autrephenomene" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Boolean" originalLength="6" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="autrephenomene" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_Boolean" usefulColumn="true"/>
     </metadata>
     <metadata connector="DUPLICATE" name="DUPLICATE">
       <column comment="" key="false" length="6" name="codecs" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="" type="id_String" originalLength="6" usefulColumn="true"/>
@@ -669,43 +669,43 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tPostgresqlOutput_1">
       <column comment="" key="false" length="6" name="codecs" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="dateconsultation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="dateconsultation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="13" name="numeropatient" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="8" name="agepatient" nullable="true" pattern="" precision="8" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="sexepatient" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="agepatient" nullable="true" pattern="" precision="8" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="sexepatient" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="typeconsultation" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="diagnosticprincipal" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="60" name="autrediagnostic" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="devenirpatient" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="dengue" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="serologiedengue" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="diarrhee" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="toux" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="fievrerespiratoire" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="palufalci" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="paluautre" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="fievreeruption" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="autrephenomene" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="dengue" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="serologiedengue" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="diarrhee" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="toux" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="fievrerespiratoire" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="palufalci" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="paluautre" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="fievreeruption" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="autrephenomene" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="6" name="codecs" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="13" name="dateconsultation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="dateconsultation" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" usefulColumn="true"/>
       <column comment="" key="false" length="13" name="numeropatient" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="8" name="agepatient" nullable="true" pattern="" precision="8" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="10" name="sexepatient" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="10" name="agepatient" nullable="true" pattern="" precision="8" sourceType="FLOAT4" type="id_Float" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="sexepatient" nullable="true" pattern="" precision="0" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" key="false" length="16" name="typeconsultation" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="19" name="diagnosticprincipal" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="60" name="autrediagnostic" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="14" name="devenirpatient" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="dengue" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="serologiedengue" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="diarrhee" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="toux" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="fievrerespiratoire" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="palufalci" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="paluautre" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="fievreeruption" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
-      <column comment="" defaultValue="" key="false" length="1" name="autrephenomene" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="dengue" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="serologiedengue" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="diarrhee" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="toux" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="fievrerespiratoire" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="palufalci" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="paluautre" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="fievreeruption" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="6" name="autrephenomene" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
       <column key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
     </metadata>

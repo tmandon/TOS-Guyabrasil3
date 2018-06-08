@@ -1152,7 +1152,7 @@
     <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
-    <elementParameter field="TEXT" name="HEADER" value="0"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
     <elementParameter field="TEXT" name="FOOTER" value="0"/>
     <elementParameter field="TEXT" name="LIMIT" value=""/>
     <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="true"/>
@@ -1386,7 +1386,7 @@
       <column comment="" key="false" length="6" name="MUN_INFE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="LOC_INFE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="DT_EXAME" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="RES_EXAM" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="RES_EXAM" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="9" name="QTD_PARA" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="QTD_CRUZ" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="ESQUEMA_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -1494,7 +1494,7 @@
       <column comment="" key="false" length="6" name="mun_infe" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="loc_infe" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="dt_exame" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="res_exam" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="res_exam" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="9" name="qtd_para" nullable="true" pattern="" precision="-1" sourceType="" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="qtd_cruz" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="esquema_1" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
@@ -1510,7 +1510,7 @@
       <column comment="" key="false" length="3" name="niv_esco" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="copyOfcopyOfout2">
         <mapperTableEntries name="cod_noti" expression="row1.COD_NOTI " type="id_String" nullable="true"/>
@@ -1542,7 +1542,7 @@
         <mapperTableEntries name="mun_infe" expression="row1.MUN_INFE " type="id_String" nullable="true"/>
         <mapperTableEntries name="loc_infe" expression="row1.LOC_INFE " type="id_String" nullable="true"/>
         <mapperTableEntries name="dt_exame" expression="row1.DT_EXAME " type="id_Date" nullable="true"/>
-        <mapperTableEntries name="res_exam" expression="row1.RES_EXAM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="res_exam" expression="row1.RES_EXAM " type="id_Integer" nullable="true"/>
         <mapperTableEntries name="qtd_para" expression="row1.QTD_PARA " type="id_Long" nullable="true"/>
         <mapperTableEntries name="qtd_cruz" expression="row1.QTD_CRUZ " type="id_String" nullable="true"/>
         <mapperTableEntries name="esquema_1" expression="row1.ESQUEMA_1 " type="id_String" nullable="true"/>
@@ -1587,7 +1587,7 @@
         <mapperTableEntries name="MUN_INFE" type="id_String" nullable="true"/>
         <mapperTableEntries name="LOC_INFE" type="id_String" nullable="true"/>
         <mapperTableEntries name="DT_EXAME" type="id_Date" nullable="true"/>
-        <mapperTableEntries name="RES_EXAM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="RES_EXAM" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="QTD_PARA" type="id_Long" nullable="true"/>
         <mapperTableEntries name="QTD_CRUZ" type="id_String" nullable="true"/>
         <mapperTableEntries name="ESQUEMA_1" type="id_String" nullable="true"/>
@@ -1890,7 +1890,7 @@
       <column comment="" key="false" length="6" name="mun_infe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="loc_infe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="dt_exame" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="res_exam" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="res_exam" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="9" name="qtd_para" nullable="true" pattern="" precision="-1" sourceType="INT8" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="qtd_cruz" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="esquema_1" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
@@ -1935,7 +1935,7 @@
       <column comment="" key="false" length="6" name="mun_infe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="8" name="loc_infe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="12" name="dt_exame" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="TIMESTAMP" type="id_Date" usefulColumn="true"/>
-      <column comment="" key="false" length="2" name="res_exam" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="res_exam" nullable="true" pattern="" precision="-1" sourceType="INT4" type="id_Integer" usefulColumn="true"/>
       <column comment="" defaultValue="" key="false" length="9" name="qtd_para" nullable="true" pattern="" precision="-1" sourceType="INT8" type="id_Long" usefulColumn="true"/>
       <column comment="" key="false" length="1" name="qtd_cruz" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
       <column comment="" key="false" length="2" name="esquema_1" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>

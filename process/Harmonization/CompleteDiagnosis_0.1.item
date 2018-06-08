@@ -95,11 +95,6 @@
     <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
     <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
-    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
-    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
-    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
-    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
     <routinesParameter id="_a04ScJ60Eee5h6EnIfdfZQ" name="DGeometryCalculator"/>
     <routinesParameter id="_az4M4J60Eee5h6EnIfdfZQ" name="DGeometryFilter"/>
     <routinesParameter id="_a02dQJ60Eee5h6EnIfdfZQ" name="DGeometryOperation"/>
@@ -224,7 +219,7 @@
       <column comment="" defaultValue="" key="false" length="1" name="autrephenomene" nullable="true" pattern="" precision="0" sourceType="BOOL" type="id_Boolean" usefulColumn="true"/>
     </metadata>
     <nodeData xsi:type="MapperData">
-      <uiProperties/>
+      <uiProperties shellMaximized="true"/>
       <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
       <outputTables sizeState="INTERMEDIATE" name="out1">
         <mapperTableEntries name="codecs" expression="row1.codecs" type="id_String" nullable="true"/>
@@ -233,16 +228,16 @@
         <mapperTableEntries name="agepatient" expression="row1.agepatient" type="id_Float" nullable="true"/>
         <mapperTableEntries name="sexepatient" expression="row1.sexepatient" type="id_Integer" nullable="true"/>
         <mapperTableEntries name="typeconsultation" type="id_String" nullable="true"/>
-        <mapperTableEntries name="diagnosticprincipal" expression="row1.diagnosticprincipal" type="id_String" nullable="true"/>
-        <mapperTableEntries name="autrediagnostic" expression="row1.diagnosticassocie" type="id_String" nullable="true"/>
+        <mapperTableEntries name="diagnosticprincipal" expression="row1.diagnosticprincipal == null ? &quot;ND&quot; : row1.diagnosticprincipal " type="id_String" nullable="true"/>
+        <mapperTableEntries name="autrediagnostic" expression="row1.diagnosticassocie == null ? &quot;ND&quot; : row1.diagnosticassocie " type="id_String" nullable="true"/>
         <mapperTableEntries name="devenirpatient" type="id_String" nullable="true"/>
         <mapperTableEntries name="dengue" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="serologiedengue" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="diarrhee" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="toux" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="fievrerespiratoire" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="palufalci" expression="row1.diagnosticprincipal == &quot;B50&quot; ? true : row1.diagnosticassocie == &quot;B50&quot; ? true : false" type="id_Boolean" nullable="true"/>
-        <mapperTableEntries name="paluautre" expression="row1.diagnosticprincipal != &quot;B50&quot; &amp;&amp; row1.diagnosticassocie != &quot;B50&quot; ? true : false" type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="palufalci" expression="row1.diagnosticprincipal==&quot;B50&quot; || row1.diagnosticassocie==&quot;B50&quot; ? true : false " type="id_Boolean" nullable="true"/>
+        <mapperTableEntries name="paluautre" expression="(row1.diagnosticprincipal!=null&amp;&amp;row1.diagnosticprincipal.toUpperCase().contains(&quot;VIVAX&quot;))||&#xA;(row1.diagnosticassocie!=null&amp;&amp;row1.diagnosticassocie.toUpperCase().contains(&quot;PRIMAQUINE&quot;))||(row1.diagnosticassocie!=null&amp;&amp;row1.diagnosticassocie.toUpperCase().contains(&quot;B51&quot;))||row1.diagnosticassocie!=null&amp;&amp;row1.diagnosticassocie.toUpperCase().contains(&quot;B52&quot;)||row1.diagnosticprincipal!=null&amp;&amp;row1.diagnosticprincipal.toUpperCase().contains(&quot;B51&quot;)||row1.diagnosticprincipal!=null&amp;&amp;row1.diagnosticprincipal.toUpperCase().contains(&quot;B52&quot;)? true : false " type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="fievreeruption" type="id_Boolean" nullable="true"/>
         <mapperTableEntries name="autrephenomene" type="id_Boolean" nullable="true"/>
       </outputTables>
